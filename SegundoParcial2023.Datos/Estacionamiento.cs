@@ -52,16 +52,17 @@ namespace SegundoParcial2023.Datos
             }
             return e;
         }
-        public static Estacionamiento operator -(Estacionamiento estacionamiento, Vehiculo vehiculo)
+        public static string operator -(Estacionamiento estacionamiento, Vehiculo vehiculo)
         {
+            string s= "vacio";
             if (estacionamiento.vehiculos.Contains(vehiculo))
             {
-                vehiculo.ImprimirTicket();
+                s=vehiculo.ImprimirTicket();
                 estacionamiento.vehiculos.Remove(vehiculo);
                 estacionamiento.espacioDisponible += 1;
                 
             }
-            return estacionamiento;
+            return s;
         }
     }
 }

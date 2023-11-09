@@ -45,12 +45,21 @@ namespace SegundoParcial2023.Consola
             Console.WriteLine("--------------------------------");
             Console.WriteLine("Estacionamiento Egreso");
             Console.WriteLine(e - m1);
+            Console.WriteLine(m1.ImprimirTicket());
             Console.WriteLine(e - p1);
+            Console.WriteLine(p1.ImprimirTicket());
+
             //Console.WriteLine(e - a1);
             //Console.WriteLine(e - m2);
             Console.WriteLine(e - p2);
+            Console.WriteLine(p2.ImprimirTicket());
+
             Console.WriteLine(e - a2);
+            Console.WriteLine(a2.ImprimirTicket());
+
             Console.WriteLine(e - m3);
+            Console.WriteLine(m3.ImprimirTicket());
+
             Console.WriteLine("--------------------------------");
             Console.WriteLine((string)e);
             Console.ReadKey();

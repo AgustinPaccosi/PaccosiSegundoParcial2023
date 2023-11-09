@@ -24,12 +24,13 @@ namespace SegundoParcial2023.Entidades
             if (Validar(patente))
             {
                 Patente = patente;
+                ingreso = DateTime.Now.AddHours(-3);
             }
             else
             {
                 Patente = null;
             }
-            ingreso = DateTime.Now.AddHours(-3);
+            //ingreso = DateTime.Now.AddHours(-3);
         }
         public static bool Validar(string patente)
         {
